@@ -6,6 +6,7 @@
 package br.udesc.ceplan.prog3.projetointegrado.modelo;
 
 import java.io.Serializable;
+import java.util.List;
 
 /**
  *
@@ -14,6 +15,15 @@ import java.io.Serializable;
 public class Senso implements Serializable {
     private Long id;
     private String nome;
+    private List<Pergunta> perguntas;
+
+    public List<Pergunta> getPerguntas() {
+        return perguntas;
+    }
+
+    public void setPerguntas(List<Pergunta> perguntas) {
+        this.perguntas = perguntas;
+    }
 
     public Long getId() {
         return id;
